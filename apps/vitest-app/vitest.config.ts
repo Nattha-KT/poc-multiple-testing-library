@@ -9,4 +9,7 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './src/setupTests.ts', // if needed
   },
+  server: {
+    port: 5172  // สามารถระบุ port ที่ต่างกันได้
+  }
 });
