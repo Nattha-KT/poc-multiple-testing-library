@@ -25,13 +25,13 @@ yarn test
 yarn workspace @poc/jest-app dev
 yarn workspace @poc/vitest-app dev
 yarn workspace @poc/cypress-app dev
-yarn workspace @poc/rtl-app dev
+yarn workspace @poc/rtl-jest-app dev
 
 # Run specific app's tests
 yarn workspace @poc/jest-app test
 yarn workspace @poc/vitest-app test
 yarn workspace @poc/cypress-app test
-yarn workspace @poc/rtl-app test
+yarn workspace @poc/rtl-jest-app test
 ```
 
 ## Testing Libraries Comparison
