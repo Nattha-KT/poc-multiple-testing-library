@@ -1,5 +1,5 @@
 {
-  "name": "@poc/jest-app",
+  "name": "@poc/jest-babel-setup",
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
