@@ -8228,7 +8228,7 @@ jsdom@^24.0.0:
     ws "^8.18.0"
     xml-name-validator "^5.0.0"
 
-jsdom@^26.0.0:
+jsdom@^26.0.0, jsdom@^26.1.0:
   version "26.1.0"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-26.1.0.tgz#ab5f1c1cafc04bd878725490974ea5e8bf0c72b3"
   integrity sha512-Cvc9WUhxSMEo4McES3P7oK3QaXldCfNWp7pl2NNeiIFlCoLr3kfq9kb1fxftiwk1FLV7CvpvDfonxtzUDeSOPg==
