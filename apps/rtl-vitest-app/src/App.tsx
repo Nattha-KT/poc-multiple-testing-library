@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from "@poc/shared";
 import { useState } from "react";
 import Dashboard from './pages/dashboard';
-import { store } from './libs/stores';
+import { store } from './features/auth/stores';
 import { Provider } from 'react-redux';
 
 const App: React.FC = () => {

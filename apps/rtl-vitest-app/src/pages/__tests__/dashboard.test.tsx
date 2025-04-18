@@ -4,7 +4,7 @@ import { describe, it, expect } from "vitest"
 import { Provider } from "react-redux"
 
 import Dashboard from "../dashboard"
-import { store } from "../../libs/stores"
+import { store } from "../../features/auth/stores"
 
 
 describe("Dashboard Page", () => {
