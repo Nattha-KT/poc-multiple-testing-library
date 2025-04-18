@@ -11,8 +11,10 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.0.1",
     "@poc/shared": "*",
     "@reduxjs/toolkit": "^2.7.0",
+    "react-hook-form": "^7.55.0",
     "react-redux": "^9.2.0",
     "yup": "^1.6.1"
   },
