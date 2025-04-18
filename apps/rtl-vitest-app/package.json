@@ -9,10 +9,12 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest"
-
   },
   "dependencies": {
-    "@poc/shared": "*"
+    "@poc/shared": "*",
+    "@reduxjs/toolkit": "^2.7.0",
+    "react-redux": "^9.2.0",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
