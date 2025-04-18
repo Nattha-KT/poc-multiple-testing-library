@@ -29,6 +29,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "test-utils/mocks", "src/__mocks__/server.ts", "src/__mocks__/index.ts", "src/__mocks__/handlers.ts"],
+  "include": ["src", "test-utils/mocks", "src/__mocks__/node.ts", "src/__mocks__/index.ts", "src/__mocks__/handlers.ts"],
   // "exclude": ["**/__tests__/*", "**/*.test.tsx", "src/shared/mocks", "src/setupTests.ts"]
 }

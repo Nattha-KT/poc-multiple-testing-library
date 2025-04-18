@@ -1,4 +1,3 @@
-export * from '../__mocks__'
 export * from './components'
 export * from './hooks'
 export * from './stores'
