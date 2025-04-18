@@ -4,12 +4,16 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { loginSchema } from "../schemas";
 
-type LoginFormValues = {
+export type LoginFormValues = {
   email: string;
   password: string;
 };
 
-const LoginForm: React.FC<{ onSubmit: (data: LoginFormValues) => void }> = ({ onSubmit }) => {
+interface LoginFormProps {
+  onSubmit: (data: LoginFormValues) => void;
+}
+
+const LoginForm: React.FC<LoginFormProps> = ({ onSubmit }) => {
   const {
     register,
     handleSubmit,
@@ -18,13 +22,26 @@ const LoginForm: React.FC<{ onSubmit: (data: LoginFormValues) => void }> = ({ on
     resolver: yupResolver(loginSchema),
   });
 
-  return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <input placeholder="Email" {...register("email")} />
-      {errors.email && <p>{errors.email.message}</p>}
+  const handleFormSubmit = (data: LoginFormValues) => {
+    onSubmit(data);
+  };
 
-      <input type="password" placeholder="Password" {...register("password")} />
-      {errors.password && <p>{errors.password.message}</p>}
+  return (
+    <form onSubmit={handleSubmit(handleFormSubmit)} aria-label="login-form">
+      <input
+        placeholder="Email"
+        aria-label="email"
+        {...register("email")}
+      />
+      {errors.email && <p role="alert">{errors.email.message}</p>}
+
+      <input
+        type="password"
+        placeholder="Password"
+        aria-label="password"
+        {...register("password")}
+      />
+      {errors.password && <p role="alert">{errors.password.message}</p>}
 
       <button type="submit">Login</button>
     </form>

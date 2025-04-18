@@ -1,6 +1,6 @@
 // src/utils/validation/loginSchema.test.ts
 import { describe, expect, it } from "vitest";
-import { loginSchema } from "../login-schema";
+import { loginSchema } from "../login.schema";
 
 describe("loginSchema", () => {
   it("passes with valid data", async () => {
