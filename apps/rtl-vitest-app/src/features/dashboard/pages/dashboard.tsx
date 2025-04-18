@@ -1,7 +1,7 @@
 // src/pages/dashboard.tsx
 import { useSelector } from "react-redux"
-import { useAppDispatch } from "../libs/hooks"
-import { logout, RootState } from "../features/auth/stores"
+import { useAppDispatch } from "../../../shared"
+import { logout, RootState } from "../../auth/stores"
 
 const Dashboard = () => {
   const dispatch = useAppDispatch()

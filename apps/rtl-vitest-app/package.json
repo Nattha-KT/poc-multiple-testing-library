@@ -19,6 +19,8 @@
     "msw": "^2.7.4",
     "react-hook-form": "^7.55.0",
     "react-redux": "^9.2.0",
+    "react-router": "6",
+    "react-router-dom": "6",
     "redux-mock-store": "^1.5.5",
     "yup": "^1.6.1"
   },

@@ -7,12 +7,15 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "types": ["jest", "@testing-library/jest-dom"],
-    "esModuleInterop": true, 
-    "allowSyntheticDefaultImports": true, 
-    
-
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@shared/*": ["src/shared/*"]
+    },
     /* Bundler mode */
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
@@ -26,5 +29,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["src", "test-utils/mocks", "src/__mocks__/server.ts", "src/__mocks__/index.ts", "src/__mocks__/handlers.ts"],
+  // "exclude": ["**/__tests__/*", "**/*.test.tsx", "src/shared/mocks", "src/setupTests.ts"]
 }
